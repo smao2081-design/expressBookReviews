@@ -4,6 +4,8 @@ const session = require('express-session')
 const customer_routes = require('./router/auth_users.js').authenticated;
 const genl_routes = require('./router/general.js').general;
 
+
+
 const app = express();
 
 app.use(express.json());
@@ -19,6 +21,7 @@ s   }
     
     try {
         const decoded = jwt.verify(token, "Your_jwt_secret_key");
+        next();
     }   catch (err) {
         return res.status(401).json({ message: "Unauthorized: Invalid token"});
 
