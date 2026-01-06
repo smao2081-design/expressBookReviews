@@ -1,0 +1,2 @@
+theia@theia-smao2081:/home/project/expressBookReviews/final_project$ curl http://localhost:5000/author/Samuel%20Beckett
+{"10":{"author":"Samuel Beckett","title":"Molloy, Malone Dies, The Unnamable, the trilogy","reviews":{}}}
