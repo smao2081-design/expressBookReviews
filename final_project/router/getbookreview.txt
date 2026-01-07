@@ -1,0 +1,2 @@
+theia@theia-smao2081:/home$ curl http://localhost:5000/review/1
+{"user1":"The book was great!"}theia@theia-smao2081:/home$ 

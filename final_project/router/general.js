@@ -83,7 +83,7 @@ public_users.get('/title/:title',function (req, res) {
 
 //  Get book review
 public_users.get('/review/:isbn',function (req, res) {
-    const isbn = number (req.params.isbn);
+    const isbn = Number(req.params.isbn);
     const book = books[isbn];
     
     if (book && book.reviews) {
@@ -91,8 +91,9 @@ public_users.get('/review/:isbn',function (req, res) {
 
     } else {
         
-
         return res.status(404).json({message: "No review found for this book"});
+
+    
     }
 
 });
